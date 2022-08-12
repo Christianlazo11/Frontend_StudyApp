@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="w-full bg-black">
-      <div className="max-w-screen-xl flex items-center justify-center text-white py-5">
+      <div className="max-w-screen-xl flex items-center justify-center text-white py-5 px-8">
         <span className="font-medium text-lg">
           {" "}
           Creado Por{" "}
