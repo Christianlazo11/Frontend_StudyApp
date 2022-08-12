@@ -15,8 +15,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full bg-black z-10">
-      <div className="max-w-screen-xl flex items-center justify-between py-5 mx-2 md:mx-auto text-white">
+    <nav className="w-full bg-grey z-50 fixed">
+      <div className="max-w-screen-xl flex items-center justify-between py-5 mx-4 md:mx-auto text-white">
         <div>
           <Link to="/" className="text-orange font-bold text-2xl">
             <span>StudyApp</span>
@@ -25,7 +25,7 @@ const Navbar = () => {
 
         <div className="flex gap-5">
           <Link to="/login" className="md:order-2 flex items-center">
-            <span className="text-lg font-medium bg-orange rounded-full py-1 px-4">
+            <span className="text-lg font-medium bg-orange rounded-full py-1 px-4 hover:bg-yellow-700">
               Iniciar Sesión
             </span>
           </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
             </div>
 
             <div
-              className={`bg-black flex flex-col md:flex-row md:items-center md:pb-0 pb-6 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 md:order-1 transition-all duration-300 ease-in gap-2 ${
+              className={`bg-grey flex flex-col gap-3 md:flex-row md:items-center md:pb-0 pb-6 absolute md:static md:z-auto z-10 left-0 w-full md:w-auto md:pl-0 pl-9 md:order-1 transition-all duration-2000 ease gap-2 ${
                 openMenu ? "top-20" : "top-[-490px]"
               }`}
             >
